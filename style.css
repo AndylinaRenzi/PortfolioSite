@@ -1,0 +1,296 @@
+
+:root{
+    --color-primary: rgb(237, 203, 34); 
+    --color-acsent:  rgb(246, 223, 107); 
+    --color-secondary: white;
+    --color-tertiary: black; 
+    --padding-sm: 10px;
+    --padding-md: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*=========Fonts===============*/
+.lemon-regular {
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.jost-regular{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*=========Fonts==============*/
+
+
+/*========a start=============*/
+
+.social a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-primary);
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: white;
+    border-radius: 100px;
+    padding: 16px 16px;
+}
+/*========a end=============*/
+
+/*==========Li Start============*/
+li a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+li{
+    padding: var(--padding-sm);
+}
+
+.Butons ul li{
+    padding: var(--padding-sm);
+
+    width: 300px;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    list-style: none;
+
+    text-align: center;
+}
+
+/*==========li end============*/
+
+/*==========Img Start============*/
+
+img.style-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+main{
+ padding: 40px;
+}
+
+.gallery{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1280px;
+    margin: auto;
+    gap: 20px;
+    padding: 40px;
+}
+
+.Acsent-img:hover{
+  opacity: 50%;
+}
+
+@media (max-width: 740px) {
+    .gallery{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+}
+
+@media (max-width: 500px) {
+    .gallery{
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+}
+
+.gallery img.Acsent-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.parent{
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.parent p{
+    padding-top: 0;
+}
+
+ 
+@media (max-width: 740px) {
+    .parent{
+    flex-direction: column;
+    align-items: center
+}
+.parent img{
+    height: 130px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+}
+
+.child p{
+    display: flex;
+}
+/*==========Img end============*/
+
+/*==========Nav Start============*/
+nav{
+    background-color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+@media (max-width: 500px) {
+    nav ul{
+    padding: 5px;
+}
+} 
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 10%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-primary);
+}
+/*==========Nav end============*/
+
+/*==========ul start===========*/
+ 
+.Butons2 ul{
+    list-style: none;
+        padding: 40px;
+}
+.Butons2 ul li{
+
+    padding: var(--padding-sm);
+
+    width: 300px;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+
+    text-align: center;
+
+}
+/*==========ul end===========*/
+
+/*==========P Start============*/
+p{
+    line-height: 20px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+/*==========P end============*/
+
+/*==========h1 Start============*/
+h1{
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+/*==========H1 end============*/
+
+/*==========boby start============*/
+body{
+    background-color: var(--color-acsent);
+}
+/*==========body end============*/
+
+/*=========Fotter Start============*/
+footer{
+    background-color: white;
+    width: 100%;
+}
+
+footer p{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 60px; 
+    color: var(--color-primary);
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 60px; 
+    color: var(--color-primary);
+}
+/*==========Footer end============*/
+.home-links{
+   display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    justify-content: center;
+}
+
+.home-buttons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.home-buttons img{
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-links strong {
+    position: absolute;
+    text-align: center;
+    display: block;
+    left: 0;
+    right: 0; 
+    bottom: 85px;
+    background: #fff8c7;
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;
+    font-family: "Jost", sans-serif;
+}
